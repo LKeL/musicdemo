@@ -1,0 +1,53 @@
+.container {
+    height: 46px;
+    width: 100%;
+    .row {
+        height: 100%;
+        position: relative;
+        > div {
+            height: 100%;
+            background-color: #313946;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border: none;
+        }
+        .musicTitle {
+            flex-direction:column;
+            align-items: flex-start;
+            padding: 16px;
+            color: #ffffff;
+            text-align: center;
+            line-height: 1.5em;
+            .title {
+                color: #afb3b9;
+                font-size: 1.4em;
+            }
+            .artist {
+                color: #7e848c;
+                font-size: 0.8em;
+            }
+        }
+        .musicImg {
+            height: 36px;
+            width: 36px;
+            border: 1px solid #afb3b9;
+            border-radius: 50%;
+        }
+        .controlList {
+            height: 40%;
+        }
+        .controlPlay {
+            height: 50%;
+        }
+        .controlButotn {
+            height: 60%;
+        }
+    }
+    .progressBar {
+        position: absolute;
+        bottom: 0;
+        height: 5%;
+        background-color: #afb3b9;
+    }
+}
